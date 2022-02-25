@@ -5,24 +5,20 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Seller implements Serializable {
-	
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private Integer id;
 	private String name;
 	private String email;
 	private Date birthDate;
 	private Double baseSalary;
-	
+
 	private Department department;
-	
+
 	public Seller() {
 	}
 
-	
-	
-	
 	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
 		super();
 		this.id = id;
@@ -32,9 +28,6 @@ public class Seller implements Serializable {
 		this.baseSalary = baseSalary;
 		this.department = department;
 	}
-
-
-
 
 	public Integer getId() {
 		return id;
@@ -75,15 +68,14 @@ public class Seller implements Serializable {
 	public void setBaseSalary(Double baseSalary) {
 		this.baseSalary = baseSalary;
 	}
-	
+
 	public Department getDepartment() {
 		return department;
 	}
-	
+
 	public void setDepartment(Department department) {
 		this.department = department;
 	}
-	
 
 	@Override
 	public int hashCode() {
@@ -107,8 +99,5 @@ public class Seller implements Serializable {
 		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
 				+ baseSalary + ", department=" + department + "]";
 	}
-	
-	
-	
-	
+
 }
